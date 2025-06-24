@@ -24,7 +24,7 @@ app.use(express.json({ limit: "50mb" }));
 // cors => cross origin resource sharing
 app.use(
   cors({
-    origin: process.env.ORIGIN,
+    origin: '*',
     credentials: true,
   })
 );
